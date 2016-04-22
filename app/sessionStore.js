@@ -156,6 +156,8 @@ module.exports.cleanSessionData = (sessionData) => {
     delete frame.parentFrameKey
     // Delete the active shortcut details
     delete frame.activeShortcutDetails
+    // Don't show frame notifications
+    delete frame.notifications
 
     if (frame.navbar && frame.navbar.urlbar) {
       frame.navbar.urlbar.urlPreview = null

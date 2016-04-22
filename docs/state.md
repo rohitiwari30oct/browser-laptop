@@ -126,7 +126,11 @@ WindowStore
     title: string, // page title
     findbarShown: boolean, // whether the findbar is shown
     findbarSelected: boolean,  // findbar text input is selected
-    notifications: Array, // the notifications for the frame. not preserved across restart.
+    notifications: [{
+      message: string,
+      id: string,
+      buttons: Array<string>
+    }], // the notifications for the frame. not preserved across restart.
     hrefPreview: string, // show hovered link preview
     key: number,
     isPrivate: boolean, // private browsing tab

@@ -22,7 +22,7 @@ const FullScreenWarning = require('./fullScreenWarning')
 const debounce = require('../lib/debounce.js')
 const getSetting = require('../settings').getSetting
 const settings = require('../constants/settings')
-const NotificationBar = require('notificationBar')
+const NotificationBar = require('./notificationBar')
 import adInfo from '../data/adInfo.js'
 import FindBar from './findbar.js'
 const { isSourceAboutUrl, getTargetAboutUrl } = require('../lib/appUrlUtil')
